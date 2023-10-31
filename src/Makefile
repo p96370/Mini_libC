@@ -11,10 +11,12 @@ SRCS = syscall.c \
        mm/malloc.c mm/mmap.c mm/mem_list.c \
        string/string.c \
        stat/fstatat.c stat/fstat.c stat/stat.c \
-       io/open.c io/close.c io/read_write.c \
+       io/open.c io/close.c io/read_write.c io/puts.c \
        io/lseek.c io/truncate.c io/ftruncate.c \
        errno.c \
-       crt/__libc_start_main.c
+       crt/__libc_start_main.c \
+       process/sleep.c process/nanosleep.c \
+       io/puts.c 
 
 # TODO: Add sleep.c and puts.c dependency.
 
